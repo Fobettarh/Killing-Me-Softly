@@ -179,7 +179,9 @@ span.explanation:hover span {left: 2%; background: ghostwhite;}
 span.explanation span {position: absolute; left: -9999px;
   margin: 4px 0 0 0px; padding: 3px 3px 3px 3px; 
   border-style:solid; border-color:black; border-width:1px;}
-span.explanation:hover span {margin: -120px 0 0 420px; background: ghostwhite; z-index:6;} </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+span.explanation:hover span {margin: -120px 0 0 420px; background: ghostwhite; z-index:6;} 
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -192,7 +194,14 @@ Because it is not feasible to represent every single experience within every sin
 
 Thank you for Playing.
 &lt;&lt;set $happiness to 100&gt;&gt;&lt;&lt;set $hasHR to false&gt;&gt;
-[[How to Play]] </tw-passagedata>
+[[How to Play]] 
+
+
+
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Start&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="2" name="Begin." tags="" position="716,183">Who do you want to be? Pick your character.
 &lt;table style=&quot;width:100%&quot;&gt;
   &lt;tr&gt;
@@ -222,18 +231,34 @@ Thank you for Playing.
   &lt;/tr&gt;
 
 &lt;/table&gt;
-</tw-passagedata>
+
+
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Begin&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="3" name="microaggressions" tags="" position="304,109">What are microaggressions? They are commonly defined as brief and commonplace daily verbal, behavioral, or environmental indignities, whether intentional or unintentional, that communicate hostile, derogatory, or negative racial slights and insults. Since then it has been expanded to slights and insults related to other marginalizations such as gender, sexuality, disability, etc. Because of unconscious biases and the perceived minimal harm of the interactions, microaggressions are difficult to confront.
 
-[[Back.|Start]] </tw-passagedata>
+[[Back.|Start]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;microaggressions&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="4" name="acculturative stress" tags="" position="762,10">What is acculturative stress? Well in simpler words it is culture shock. First defined in the realm of immigrating to a new country, it has expanded to explain the psychological, cognitive, and behavioral effects present in assimilating into a dominant culture rife with racism, sexism, ableism, etc.
 
-[[Back.|Start]] </tw-passagedata>
+[[Back.|Start]] 
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;acculturative stress&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="5" name="Alex" tags="" position="772,338">You are Alex. An early-20s man in an urban area. You have been living in the area for years now and have a large [[social circle|Alex sc]] and [[Tyler]], your go to brunch buddy. You have a very active nightlife. You are happily single. You’re just about to start your new job and are excited about it.
 
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
 
-[[Start Playing|Alex Start]] </tw-passagedata>
+[[Start Playing|Alex Start]] 
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="6" name="Leslie" tags="" position="1349,0">You are Leslie. A mid-20s women in an urban area. You are happy with your partner [[Jesse]], and have a small [[social circle]]. You have a chronic illness, which your partner helps you with as needed. You’re just about to start your new job and are anxious but optimistic about it. 
 
 &lt;&lt;set $happiness to $happiness - 15&gt;&gt;
@@ -241,55 +266,87 @@ Thank you for Playing.
 
 [[Start Playing]]
 
-</tw-passagedata>
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Leslie&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="7" name="Jesse" tags="" position="1051,0">You and Jesse met at a summer cookout. While you had been in the same circles for a while, this was the night the stars aligned, and you started talking. Soon you were going on dates, and soon after that you went steady. You have been together for just over two years and have recently moved in together. (Jesse goes by they/them pronouns.)
 
-[[Back.|Leslie]]</tw-passagedata>
+[[Back.|Leslie]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Jesse&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="8" name="social circle" tags="" position="1557,10">You have a few close friends and that works just fine for you. Because most of the circle are homebodies, and some have disabilities of their own, there is not a lot of high-impact activities that would exacerbate your chronic illness.
 
-[[Back.|Leslie]] </tw-passagedata>
+[[Back.|Leslie]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;social circle&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="9" name="Start Playing" tags="" position="1347,137">It is bright and early on a Monday morning in June. Today is your first day of work! It’s your first real job out of school and you are a bundle of nerves. As you look through your closet you come up with three different outfits. You decide to:
 
 [[Dress up- got to make a good impression!]]
 [[Wear something casual but appropriate- don’t want to look like you’re trying too hard.]]
-[[Basics-Can never go wrong with the basics.]]</tw-passagedata>
+[[Basics-Can never go wrong with the basics.]]
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Start Playing&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="10" name="Dress up- got to make a good impression!" tags="" position="1579,139">You throw on a women&#39;s suit and put on some makeup. The effort of putting the outfit together as well as the anxiety exhausts you. 
 
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
 
 
-[[Head to Work]]</tw-passagedata>
+[[Head to Work]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Dress up- got to make a good impression!&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="11" name="Head to Work" tags="" position="1614,367">You take a deep breath and walk into the building. Your future supervisor quickly greets you and welcomes you to the company. He escorts you around the office introducing you to colleagues who are too many to count. Finally, you sit in your cubicle. The coworker in the cubicle next to you leans over and says “Where are you from?”
 
 [[NJ]]
 [[Why?]]
-[[My family has been in NJ for as long as we remember.]]</tw-passagedata>
+[[My family has been in NJ for as long as we remember.]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Head to Work&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="12" name="Wear something casual but appropriate- don’t want to look like you’re trying too hard." tags="" position="1456,294">You throw on a button down and slacks. At the last minute you decide to put a cardigan over it. You think about putting makeup on but decide to go straight to work instead.
 &lt;&lt;set $happiness to $happiness - 3&gt;&gt;
 
-[[Head to Work]] </tw-passagedata>
+[[Head to Work]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Wear something casual but appropriate- don’t want to look like you’re trying too hard.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="13" name="Basics-Can never go wrong with the basics." tags="" position="1226,336">A blouse and a skirt and you are ready for the day. In lieu of makeup, you put on lip gloss and call it a day.
 &lt;&lt;set $happiness to $happiness - 1&gt;&gt;
 
-[[Head to Work]] </tw-passagedata>
+[[Head to Work]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Basics-Can never go wrong with the basics.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="14" name="NJ" tags="" position="1605,497">//No, where are you really from?// 
 
 (doesn&#39;t look like they will take NJ for an answer)
 
 
-[[Try again.|Head to Work]] </tw-passagedata>
+[[Try again.|Head to Work]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;NJ&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="15" name="Why?" tags="" position="1362,484">//Jeez it was just a question!//
 
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
 
-[[Continue.]]</tw-passagedata>
+[[Continue.]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Why?&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="16" name="My family has been in NJ for as long as we remember." tags="" position="1889,440">//That is so weird. You look so exotic!//
 
 &quot;...thanks?&quot;
 
 &lt;&lt;set $happiness to $happiness - 1&gt;&gt;
 
-[[Continue]] </tw-passagedata>
+[[Continue]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;My family has been in NJ for as long as we remember.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="17" name="Continue" tags="" position="1893,607">The rest of the day passes relatively quickly. You end up really liking your work (at least so far). At the end of the day there is talk of going out to happy hour. A bunch of the younger workers look to you and invite you to happy hour. What do you say?
 
 &lt;span class=&quot;explanation&quot; title=&quot;try again&quot;&gt;==Sure! That sounds like fun!==
@@ -299,17 +356,28 @@ Thank you for Playing.
 
 
 
-</tw-passagedata>
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Continue&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="18" name="Maybe for an hour?" tags="" position="1581,767">//Awesome! Here&#39;s the address. See you there!//
 
 [[Go to Bar.]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Maybe for an hour?&#39;); &gt;&gt;
+
+
 </tw-passagedata>
 <tw-passagedata pid="19" name="Nah, I’m totally beat." tags="" position="1759,817">//Lame! Alright; see you tomorrow!// &lt;&lt;set $happiness to $happiness - 1&gt;&gt;
 
-[[The Next Day.]]</tw-passagedata>
+[[The Next Day.]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Nah, I&#39;m totally beat.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="20" name="Yeah that’s not my thing. Thanks though." tags="" position="1987,819">//Lame! Alright; see you tomorrow!// &lt;&lt;set $happiness to $happiness - 1&gt;&gt;
 
-[[The Next Day.]]</tw-passagedata>
+[[The Next Day.]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Yeah that’s not my thing. Thanks though.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="21" name="Continue." tags="" position="1480,613">The rest of the day passes relatively quickly. You end up really liking your work (at least so far). At the end of the day there is talk of going out to happy hour. As they talk and laugh amongst themselves you aren’t sure if their invitation applies to you. So you start to pack up and one of the younger colleagues finally asks if you’d like to come. 
 
 &lt;span class=&quot;explanation&quot; title=&quot;try again&quot;&gt;==Sure! That sounds like fun!==
@@ -318,7 +386,7 @@ Thank you for Playing.
 [[Yeah that’s not my thing. Thanks though.|Yeah that’s not my thing. Thanks though.]]
 
 
-</tw-passagedata>
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Continue.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="22" name="Go to Bar." tags="" position="1548,918">&lt;div class=&quot;bar&quot;&gt;
 &lt;img src= &quot;images/bar.jpg&quot; alt=&quot;liquor bottles on a wall&quot;/&gt;
 You go to the bar. The bar is loud and boisterous. (Just the thought of being surrounded by so many drunk people for an extended period of time makes you tired, but you want to make a good impression). You and your coworkers have a couple of drinks. As the drinking continues so does the boisterousness. After a while, the joking begins. You start to feel uncomfortable as the jokes become less and less funny, and more and more sexist. As you try and figure out the best exit strategy, a coworker drunkenly leans on you, puts her hands in your hair, and says how your hair isn’t as ghetto as she thought it’d be. You freeze. And:
@@ -326,38 +394,60 @@ You go to the bar. The bar is loud and boisterous. (Just the thought of being su
 [[Laugh uncomfortably and say thanks.]]
 [[Push her off and say don’t touch me.]]
 [[I know you probably meant well but that’s not ok.]] &lt;/div&gt;
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Go to Bar.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="23" name="The Next Day." tags="" position="1900,998">The next morning you throw on some clothes, and head to work. When you get there many of your coworkers are talking about how great the happy hour was. Throughout the day they make inside jokes and references to the night before you wonder if it would have been good for you to go. As you walk home, the streets hiss from the recent rainfall. You know that Jesse will be in classes until late, another couple hours at least. You consider using this solitude to catch up on your guilty pleasure television show you’d neglected in the past couple of weeks. As you picture adorable British judges talking about soggy bottoms, you notice that this old woman keeps glancing back at you from further up in the street. On her fourth turn around, she stops, walks towards you, and says, 
 
 //You look like you have a good job unlike the rest of your people. You’re a credit to the race.//
 
 And walks away.
 
-[[Next.|Humpday]] </tw-passagedata>
+[[Next.|Humpday]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;The Next Day.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="24" name="Laugh uncomfortably and say thanks." tags="" position="1517,1164">//No problem!// &lt;&lt;set $happiness to $happiness - 3&gt;&gt;
 
-[[Next.|Party Continued]] </tw-passagedata>
+[[Next.|Party Continued]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Laugh uncomfortably and say thanks.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="25" name="Push her off and say don’t touch me." tags="" position="1678,1066">//Jeez, calm down.// &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
 
-[[Next.|Party Continued]]</tw-passagedata>
+[[Next.|Party Continued]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Push her off and say don’t touch me.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="26" name="Party Continued" tags="" position="1600,1470">You leave early, disheartened by the long day and the party. You go home and Jesse looks up from the couch and asks about your day. You
 [[Tell them about the day- good and bad.]]
 [[Tell them about the day-just good.]]
 [[Just shake your head and say nothing.|The Next Day]]
 [[Kiss them goodnight and go straight to bed.|The Next Day]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Party Continued&#39;); &gt;&gt;
+
 </tw-passagedata>
 <tw-passagedata pid="27" name="I know you probably meant well but that’s not ok." tags="" position="1375,1094">//My bad.// &lt;&lt;set $happiness to $happiness - 1&gt;&gt;
 
-[[Next.|Party Continued]] </tw-passagedata>
+[[Next.|Party Continued]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;I know you probably meant well but that’s not ok.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="28" name="Humpday" tags="" position="2101,1005">Humpday is hitting you hard. There are too many days until the weekend and there is a lot of work to be done before you can leave. You put your headphones on, crank up the music, and try and tune everyone out. It takes a couple of tries before a colleague gets your attention, and you take off your headphones and:
 
 [[Ask what’s up.]]
 [[Say I’m busy can I talk later.]]
 [[Listen while still working.]]
-</tw-passagedata>
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Humpday&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="29" name="The Next Day" tags="" position="1704,1218">The next morning you’re feeling kind of anxious and tired from the night before. You decide to throw on some clothes, and head to work. When you get there you can feel the difference in how your colleagues treat you. They laugh and joke about the happy hour the night before and seem genuinely happy that you came out with them. You can tell that they feel that you are now part of them. You’re happy they like you, but it’s hard to shake off the discomfort from the events last night. But, the day passes without any incident. As you walk home, the streets hiss from the recent rainfall. You know that Jesse will be in classes until late, another couple hours at least. You briefly consider using this serendipitous solitude to catch up on your guilty pleasure television show you’d neglected in the past couple of weeks. As you picture adorable British judges talking about soggy bottoms, you notice that this old woman keeps glancing back at you from further up in the street. On her fourth turn around, she stops, walks towards you, and says “You look like you have a good job unlike the rest of your people. You’re a credit to the race.” And walks away.
 
-[[Next.|Birthday Party]]</tw-passagedata>
+[[Next.|Birthday Party]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;The Next Day&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="30" name="Birthday Party" tags="pool" position="1857,1328">&lt;div class=&quot;pool&quot;&gt;
 &lt;img src= &quot;images/pool.JPG&quot; alt=&quot;outdoor pool&quot;/&gt;
 To celebrate your birthday Jesse and friends organize a pool party. You invite your colleague Sam that you’ve started to become close to. She’s the only one at work that doesn’t make you want to pull your hair out. The hot August day makes the cold pool water feel that much more amazing. The swimming tires you out easily so you lay on a lawn chair reading a book. After about 15 minutes, Sam asks why you’re not getting back into the pool, and you mention that physical activity tires you out easily so you’re taking a break. She responds, 
@@ -367,14 +457,23 @@ To celebrate your birthday Jesse and friends organize a pool party. You invite y
 While Jesse and some of your other friends speak up for you, it still stings. You try and shake it off, but you find yourself overextending at dinner to compensate for not acting healthier. Jesse is great and ends the after-party a little early so you can sleep, but you feel bad for having to kick everyone out early.
 &lt;&lt;set $happiness to $happiness - 1&gt;&gt;
 
-[[Next.|Humpday]] &lt;/div&gt;</tw-passagedata>
+[[Next.|Humpday]] &lt;/div&gt;
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Birthday Party&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="31" name="Tell them about the day- good and bad." tags="" position="1790,1509">The thought of opening up about your day in any capacity feels impossible.
 
 [[Try Again. |Party Continued]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Tell them about the day- good and bad.&#39;); &gt;&gt;
+
 </tw-passagedata>
 <tw-passagedata pid="32" name="Tell them about the day-just good." tags="" position="1639,1634">The thought of opening up about your day in any capacity feels impossible.
 
-[[Try Again. |Party Continued]]</tw-passagedata>
+[[Try Again. |Party Continued]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Tell them about the day-just good.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="33" name="Ask what’s up." tags="hairpolitics" position="2081,1167">&lt;div class=&quot;hairpolitics&quot;&gt;
 &lt;img src= &quot;images/hairpolitics.png&quot; alt=&quot;a picture of professional or white hairstyles vs unprofessional black hairstyles&quot;/&gt;
 &lt;strong&gt;//Just wanted to ask if any supervisors have ever had a problem with your hair?//
@@ -386,32 +485,58 @@ You stare blankly and reply &quot;No...&quot;
 They then walk away. It takes a while before you get back into the groove of working, and hours later you realize that you’ve been self-consciously touching your hair all day.
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
 
-[[Next.|Mall Day]] &lt;/strong&gt;&lt;/div&gt;</tw-passagedata>
+[[Next.|Mall Day]] &lt;/strong&gt;&lt;/div&gt;
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Ask what’s up.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="34" name="Mall Day" tags="" position="2132,1309">It’s a Saturday morning. You and Jesse decide to go to the mall to get new clothes. It’s been awhile since you treated yourselves to a nice day. You meander from store to store drinking smoothies and taking in the mall people. You both decide to go into a nice store to treat each other to something nice. When entering the store you split ways so you can surprise each other. You&#39;re putzing around the jewelry section when you notice that the sales associate has been asking if you needed help five times now. And hasn’t been out of your peripheral for 15 minutes. With dread you realize that they think you’re a “high risk” shopper. Your heart starts to beat faster and you look around for Jesse. When you spot them, you rush over and explain the situation. Thankfully they understand and you leave the store without buying anything. But you can’t help but feel disappointed and anxious. Jesse asks if you still want to do dinner.
 
 [[Agree to go. It’ll take your mind off the encounter.]]
 [[Say that you’re tired and would rather go home.]]
 [[Say the experience rattled you and you don’t want to be around people.]] 
-</tw-passagedata>
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Mall Day&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="35" name="Say I’m busy can I talk later." tags="" position="2257,1219">//Well there’s no reason to sound so angry!// 
 &lt;&lt;set $happiness to $happiness - 3&gt;&gt;
 
-[[Next.|Mall Day]] </tw-passagedata>
+[[Next.|Mall Day]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Say I’m busy can I talk later.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="36" name="Listen while still working." tags="" position="2355,1021">//Way to be rude!// &lt;&lt;set $happiness to $happiness - 3&gt;&gt;
 
-[[Next.|Mall Day]] </tw-passagedata>
+[[Next.|Mall Day]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Listen while still working.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="37" name="Agree to go. It’ll take your mind off the encounter." tags="" position="1946,1476">Anxious about being in another public space after your experience, you almost back out. But deciding that food is more important than discomfort you agree to go. Jesse decides to treat you to the nice Italian restaurant the two of you had been eyeing for a while. You get seated and order your food. You realize that the server only talks to Jesse throughout your time there. Later on your way to the bathroom, you overhear the servers talking and your server complaining about how “your people” never tip well. You hurry back to the table and eat the rest of your food in silence. When it’s time for the check you:
 
 ==Leave a stingy tip. The server gave you terrible service and insulted you.==
 ==Leave an extremely good tip. That will show her not to make assumptions!==
 [[Tell Jesse to pick up the tab.]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Agree to go. It’ll take your mind off the encounter.&#39;); &gt;&gt;
+
 </tw-passagedata>
 <tw-passagedata pid="38" name="Say that you’re tired and would rather go home." tags="" position="2166,1592">They give you a hug and offer to treat you to a milkshake on the way home. You feel your spirits lift slightly despite the events of the day. 
 &lt;&lt;set $happiness to $happiness + 1&gt;&gt;
-[[Next.|Minority College]]</tw-passagedata>
+[[Next.|Minority College]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Say that you’re tired and would rather go home.&#39;); &gt;&gt;
+
+
+</tw-passagedata>
 <tw-passagedata pid="39" name="Say the experience rattled you and you don’t want to be around people." tags="" position="2340,1440">They give you a hug and offer to treat you to a milkshake on the way home. You feel your spirits lift slightly despite the events of the day. 
 &lt;&lt;set $happiness to $happiness + 1&gt;&gt;
-[[Next.|Minority College]] </tw-passagedata>
+[[Next.|Minority College]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Say the experience rattled you and you don’t want to be around people.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="40" name="Minority College" tags="" position="2220,1778">It’s a Thursday afternoon. You’ve arrived at the break room early to heat up your food and read quietly. As you sit in the corner with your food and book, colleagues come into the room speaking of college. They are discussing how expensive higher education is. You put the book down to commiserate about college loan experiences when the older colleague says, 
 
 //Yeah the only way to get into an Ivy these days is to be a politician’s daughter or be a minority.//
@@ -419,21 +544,33 @@ They then walk away. It takes a while before you get back into the groove of wor
 [[Say nothing and pretend you didn’t hear.]]
 [[Join the conversation and explain how the comment was hurtful.]]
 
-</tw-passagedata>
-<tw-passagedata pid="41" name="StorySubtitle" tags="" position="374.00019999999995,0">&lt;br/&gt;
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Minority College&#39;); &gt;&gt;</tw-passagedata>
+<tw-passagedata pid="41" name="StorySubtitle" tags="" position="374,0">&lt;br/&gt;
 A game demonstrating how it feels to suffer microaggressions and acculturative stress day after day.</tw-passagedata>
 <tw-passagedata pid="42" name="Sure! That sounds like fun!" tags="" position="1376,852">You don&#39;t have the energy! Seems like the act of going all out this morning and the microaggressions have prevented you from picking this option. 
 
-[[Try Again.|Continue.]]</tw-passagedata>
+[[Try Again.|Continue.]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Sure! That sounds like fun!&#39;); &gt;&gt;
+</tw-passagedata>
 <tw-passagedata pid="43" name="Tell Jesse to pick up the tab." tags="" position="2005,1668">You both head home. While Jesse raves about the great meal, your own stomach is in knots. When you reach home, you head straight to bed too tired to even say goodnight.
 &lt;&lt;set $happiness to $happiness - 3&gt;&gt;
 
-[[Next.|Minority College]]</tw-passagedata>
+[[Next.|Minority College]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Tell Jesse to pick up the tab.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="44" name="Say nothing and pretend you didn’t hear." tags="" position="1938,1846">Laughing they grab their food and leave. You go back to your book, but find it hard to focus and the comment stays with you all day.
 
 &lt;&lt;set $happiness to $happiness -10 &gt;&gt;
 
-[[Next.|Halloween 1a]]</tw-passagedata>
+[[Next.|Halloween 1a]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Say nothing and pretend you didn’t hear.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="45" name="Join the conversation and explain how the comment was hurtful." tags="" position="2433,1873">You interrupt the conversation to say that is not a fair thing to say. The back and forth continues on for a while. 
 
 //Well you don’t count, you’re obviously one of the good ones….Well there are fewer opportunities for white people….It’s reverse discrimination….quality has been diminished to fill quotas...why are you getting so emotional?//
@@ -442,14 +579,22 @@ Realizing that the conversation is going nowhere you “agree to disagree” and
 
 &lt;&lt;set $happiness to $happiness -25&gt;&gt;
 
-[[Next.|Halloween 1b]]</tw-passagedata>
+[[Next.|Halloween 1b]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Join the conversation and explain how the comment was hurtful.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="46" name="Halloween 1b" tags="" position="2452,2065">You come back from work on a Tuesday evening early in October and see Jesse has started to decorate the apartment with cobwebs and spiders. You smile and start to help. By the end of the evening, you’re tired but content. You both turn in early. Jesse falls asleep almost immediately, but thinking about going to work tomorrow starts to fill you with anxiety. You lay in bed, each minute ticking closer and closer to &quot;wake up time&quot; and passing on a swelling wave of ever-encroaching dread. Recurrent intrusive thoughts about things people have said at work, and what might happen in the future keep you up. Finally, you pass into a fitful sleep. &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
 
-[[Next.|Halloween 2]]</tw-passagedata>
+[[Next.|Halloween 2]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Halloween 1b&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="47" name="Halloween 1a" tags="" position="1756,1989">You come back from work on a Tuesday evening early in October and see Jesse has started to decorate the apartment with cobwebs and spiders. You smile and start to help. By the end of the evening, you’re tired but content. You both turn in early. Jesse falls asleep almost immediately, but thinking about going to work tomorrow starts to fill you with anxiety. Day after day it seems, people make comments and invalidate your expertise. You lay in bed, each minute ticking closer and closer to &quot;wake up time&quot; and passing on a swelling wave of ever-encroaching dread. Recurrent intrusive thoughts about things people have said at work, and what might happen in the future keep you up. Finally, you pass into a fitful sleep. &lt;&lt;set $happiness to $happiness + 5&gt;&gt;
 
-[[Next.|Halloween 2]]</tw-passagedata>
-<tw-passagedata pid="48" name="Halloween 2" tags="" position="2157,2061">Halloween falls on a Friday this year. You adjust your curls and head into work feeling especially cute and humming “You’re Never Fully Dressed Without a Smile.” Most of your colleagues have dressed up in some capacity. You breathe a little sigh of relief when you don’t see any terrible costumes. A couple of hours pass, and you head to the Halloween work luncheon. And gasp. The administration has taken upon themselves to go as the prisoners from //Orange is the New Black//, including darkening their skin to “authenticate” the costumes. It hits you just how alone you are at work. None of your colleagues seem to have a problem with the costumes. In fact, your supervisor comes over and puts his arm next to yours and exclaims that you match now. You
+[[Next.|Halloween 2]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Halloween 1a&#39;); &gt;&gt;</tw-passagedata>
+<tw-passagedata pid="48" name="Halloween 2" tags="" position="2158,2061">Halloween falls on a Friday this year. You adjust your curls and head into work feeling especially cute and humming “You’re Never Fully Dressed Without a Smile.” Most of your colleagues have dressed up in some capacity. You breathe a little sigh of relief when you don’t see any terrible costumes. A couple of hours pass, and you head to the Halloween work luncheon. And gasp. The administration has taken upon themselves to go as the prisoners from //Orange is the New Black//, including darkening their skin to “authenticate” the costumes. It hits you just how alone you are at work. None of your colleagues seem to have a problem with the costumes. In fact, your supervisor comes over and puts his arm next to yours and exclaims that you match now. You
 
 ==Force yourself to say something==
 &lt;&lt;if $happiness gte 70&gt;&gt; [[Talk to Supervisor]]
@@ -463,32 +608,56 @@ Realizing that the conversation is going nowhere you “agree to disagree” and
 
 [[Say nothing.|Say nothing B]]
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata>
+&lt;&lt;/if&gt;&gt;
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Halloween 2&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="49" name="Talk to Supervisor" tags="" position="2029,2306">You find your supervisor by the food and try to explain why you feel uncomfortable, but your supervisor just laughs it off and tells you to stop being so sensitive. You grab food and hurry back to your cubicle still distraught. The rest of the day passes in a daze.
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
 
-[[Next.|Halloween Aftermath]] </tw-passagedata>
+[[Next.|Halloween Aftermath]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Talk to Supervisor&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="50" name="Say nothing." tags="" position="2234,2353">You grab food and hurry back to your cubicle still distraught. The rest of the day passes in a daze.
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
-[[Next.|Halloween Aftermath]] </tw-passagedata>
+[[Next.|Halloween Aftermath]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Say nothing.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="51" name="Talk to HR" tags="" position="1873,2255">You find your HR representative, and ask to speak to them about the incident. You go into their office and begin to explain how it hurt you. Suddenly, you&#39;re crying, and unloading some of the microaggressions you have been experiencing throughout the job. They hear you out, and state next steps. You leave feeling drained, but relieved.
 &lt;&lt;set $hasHR to true&gt;&gt;
 &lt;&lt;set $happiness to $happiness + 5&gt;&gt;
-[[Next.|Halloween Aftermath]] </tw-passagedata>
+[[Next.|Halloween Aftermath]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Talk to HR&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="52" name="Notice your hands are shaking. Why do you feel so helpless?" tags="" position="1586,2214">You desperately want to say something. You look down and notice that your hands are shaking. All of the previous incidents at work come rushing back. You haven&#39;t tried to speak up before. Can you start now? You grab food and hurry back to your cubicle still distraught. The rest of the day passes in a daze.
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
 
 [[Next.|Halloween Aftermath]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Notice your hands are shaking. Why do you feel so helpless?&#39;); &gt;&gt;
+
+
 </tw-passagedata>
 <tw-passagedata pid="53" name="Halloween Aftermath" tags="" position="2006,2560">The alarm rings the next day for work. You groan and hurriedly turn it off. The thought of going to work seems impossible. Not only are you exhausted from the party, but you know you’re going to have to deal with uncomfortable comments about your chronic illness. You-
 
 ==Force yourself to go to work.== 
 ==Decide to go in late.==
 [[Call in sick. It’s just not happening.]] 
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Halloween Aftermath&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="54" name="Call in sick. It’s just not happening." tags="" position="2072,2730">You send a quick email to your boss. As you throw the covers over your head you realize just how relieved you are. Work has really been wearing you down lately. 
 
-[[Next.|Christmas]]</tw-passagedata>
+[[Next.|Christmas]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Call in sick. It’s just not happening.&#39;); &gt;&gt;
+
+
+</tw-passagedata>
 <tw-passagedata pid="55" name="Christmas" tags="" position="2113,2882">As you walk into work, your heart sinks as you realize that the office has been decorated to the nines for Christmas. You walk to your desk and hunker down for some work. Noticing that you’re less than enthused a coworker calls you a Grinch. You roll your eyes and continue working. You just think it would be nice to leave religion out of the workplace. Then another coworker responds,
 
 //Don’t be rude! She probably doesn’t even celebrate Christmas because she celebrates Kwanzaa instead, right?//
@@ -498,31 +667,51 @@ You cringe and state that you actually celebrate Chanukkah. Both colleagues look
 ==Make food.==
 [[Order takeout.]] 
 [[Wait for Jesse to cook when they get back.]]
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Christmas&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="56" name="Order takeout." tags="" position="2071,3024">As you eat, you realize just how bad your job is starting to wear you down. How long has it been since you’ve looked forward to the work day? It seems like ages ago. 
 
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
 
 [[Next.|Lazy Day A]]
-</tw-passagedata>
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Order takeout.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="57" name="Wait for Jesse to cook when they get back." tags="" position="2360,3025">Jesse gets back not long after and you help them cook. As you eat, you realize just how badly your job is starting to wear you down. 
 
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
 
-[[Next.|Lazy Day B]]</tw-passagedata>
+[[Next.|Lazy Day B]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Wait for Jesse to cook when they get back.&#39;); &gt;&gt;
+
+
+</tw-passagedata>
 <tw-passagedata pid="58" name="Lazy Day A" tags="" position="2003,3218">You and Jesse are having a lazy day in bed. After a while the conversation turns to work. Jesse excitedly talks about all the amazing things that have been happening at work. As you watch their face light up as they talk about it, you can’t help but feel resentful that your own workplace isn’t as supportive. As you listen, you resolve to try and make things better at your own workplace. While you have no idea how you’re going to do that, the act of making a plan makes you feel better. 
 
-[[Next.|Park Day]]</tw-passagedata>
+[[Next.|Park Day]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Lazy Day A&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="59" name="Lazy Day B" tags="" position="2385,3216">You and Jesse are having a lazy day in bed. After a while the conversation turns to work. Jesse excitedly talks about all the amazing things that have been happening at work. As you watch their face light up as they talk about it, you can’t help but feel resentful that your own workplace isn’t as supportive. As you listen, despair at having to go back into the job day after day. Later that night, you find it impossible to fall asleep. Every time you close your eyes, you&#39;re overcome with anxious thoughts that wrap themselves around each other. Worries about your job lead overwhelm you and you&#39;re unable to shake them off long enough to doze off. Your eyes won&#39;t even stay shut as your mind races through the various things that have happened at work. 
 
 ==Force yourself to sleep.== 
 ==Do some relaxing breathing exercises to help you fall asleep.==
 ==Walk around to shake off some of the anxiety jitters.==
 [[Turn on the tv. It is just not happening any time soon.]]
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Lazy Day B&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="60" name="Turn on the tv. It is just not happening any time soon." tags="" position="2381,3406">Nothing else seems to be working so you turn on the tv. Flipping through channels, you finally settle on some nature documentary. After what feels like lifetimes you finally fall asleep.
 
-[[Next.|Park Day]] </tw-passagedata>
+[[Next.|Park Day]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Turn on the tv. It is just not happening any time soon.&#39;); &gt;&gt;
+
+
+</tw-passagedata>
 <tw-passagedata pid="61" name="Park Day" tags="park" position="1992,3411">&lt;div class=&quot;park&quot;&gt;
 &lt;img src= &quot;images/park.jpg&quot; alt=&quot;park bench with a fountain in the background&quot;/&gt;
 It’s a beautiful April day and you have decided to take a personal day. You put on leggings and a tank and head to the gym. Afterward, you get a milkshake and sit in the park enjoying the weather. With your eyes closed and face up to the sky you think that the life can’t get any better than this moment. 
@@ -536,20 +725,37 @@ Confused, you ask for clarification and she says that disabled people don’t go
 [[Try and explain the difference between sickness and disability.]]
 [[Joke about wishing that those things could fix the disability.]]
 [[Change the subject.]]&lt;/div&gt;
-</tw-passagedata>
-<tw-passagedata pid="62" name="Try and explain the difference between sickness and disability." tags="" position="1857,3531">
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Park Day&#39;); &gt;&gt;</tw-passagedata>
+<tw-passagedata pid="62" name="Try and explain the difference between sickness and disability." tags="" position="1858,3531">
 As you try and explain the differences, Sam shrugs and apologizes. 
 //Didn’t know it was such a big deal.//
 
 Unsure of her sincerity, you change the subject, and head home soon after. 
 
-[[Next.|Period Joke]] </tw-passagedata>
+[[Next.|Period Joke]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Try and explain the difference between sickness and disability.&#39;); &gt;&gt;
+
+
+</tw-passagedata>
 <tw-passagedata pid="63" name="Joke about wishing that those things could fix the disability." tags="" position="2054,3567">As you joke about how even the superfood kale won’t take away the disability unfortunately, you feel good about saying something even if it might not be taken seriously, but sad that you couldn’t be more explicit about it. The rest of the conversation passes without incident and you head home.
 
-[[Next.|Period Joke]] </tw-passagedata>
+[[Next.|Period Joke]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Joke about wishing that those things could fix the disability.&#39;); &gt;&gt;
+
+
+</tw-passagedata>
 <tw-passagedata pid="64" name="Change the subject." tags="" position="2400,3593">You laugh uncomfortably and change the subject. The conversation ends soon after and you head home.
 
-[[Next.|Period Joke]] </tw-passagedata>
+[[Next.|Period Joke]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Change the subject.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="65" name="Period Joke" tags="" position="2048,3705">You wake up in the middle of the night in a lot of pain. Jesse helps get your medication and water, but it takes a long time before the pain subsides, and it leaves you exhausted. When your alarm goes off 4 hours later, you groggily turn it off and decide to do a half-day. You wake up later tired, but feel slightly better and go into work. An older male coworker sees you walk in and jokes about coming in late because of a hangover. When you ignore him, he says,
 
 //Wow are you on your period sweetheart? You sure are grumpy!//
@@ -562,34 +768,58 @@ Unsure of her sincerity, you change the subject, and head home soon after.
 ==Say something sarcastic==
 [[Keep walking.|Promotion B]]
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata>
+&lt;&lt;/if&gt;&gt;
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Period Joke&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="66" name="Say something sarcastic" tags="" position="1966,3876">You roll your eyes and say, &quot;If I had to bleed to find you annoying, I&#39;d be anemic.&quot;
 
 &lt;&lt;if $hasHR is true&gt;&gt;[[Next.|Promotion B]] 
 &lt;&lt;elseif $hasHR is false&gt;&gt;[[Next.|Promotion C]] 
-&lt;&lt;/if&gt;&gt;</tw-passagedata>
+&lt;&lt;/if&gt;&gt;
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Say something sarcastic&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="67" name="Promotion B" tags="" position="2182,4066">It’s a hot day in May. //Summer is definitely here,// you think as you walk into work and put your stuff down. You&#39;re excited but nervous because there is talk about a promotion and you and your colleague have both been gunning for it. And according to the rumor mill, it will be awarded today. Hours pass and you don’t hear anything. Finally, you hear a bunch of colleagues planning a congratulatory happy hour for the promotion. It takes everything in you not to cry. You have worked really hard for the promotion. And you wonder if the fact that your supervisor and some people at work have called you confrontational has anything to do with not being chosen. As you think about all the times you have tried to stay true to your morals but still hit walls, you decide then and there that this job isn’t worth all of the stress. While you have no idea what you’re going to do next, the act of making a plan makes you feel better.
 
-[[Next.|Disney World B]]</tw-passagedata>
+[[Next.|Disney World B]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Promotion B&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="68" name="Promotion A" tags="" position="1757,3761">It’s a hot day in May. Summer is definitely here  you think as you walk into work and put your stuff down. As you get started on the work for the day, your supervisor comes up to you and asks to see you in his office. Heart sinking you follow him into his office and see some other people from administration there. As you sit down you wrack your brain thinking about what you could have possibly done badly to warrant this. They talk about your time here and how well you’ve fit the culture. The words “surprisingly well” stick in your head as they talk about your well your accomplishments fit their institution’s values. They decide to offer you a promotion! As they tell you about what the new job will entail and what the benefits will be, you are flooded with mixed emotions. The job will give you more power to start making some very needed changes to the workplace culture, but the thought of staying for another year to begin those changes seem daunting. Is this job worth it? The stress? Sleeplessness? Anxiety? You think on all the things that have happened in this past year and:
 
 [[Accept right away.]]
 [[Ask for a few days to think about it.]]
 [[Decline.]]
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Promotion A&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="69" name="Promotion C" tags="" position="1891,4138">It’s a hot day in May. //Summer is definitely here,// you think as you walk into work and put your stuff down. You&#39;re excited but nervous because there is talk about a promotion and you and your colleague have both been gunning for it. And according to the rumor mill, it will be awarded today. Hours pass and you don’t hear anything. Finally, you hear a bunch of colleagues planning a congratulatory happy hour for the promotion. It takes everything in you not to cry. You have worked really hard for the promotion. And you wonder if the fact that going to HR about all of the microaggressions and stress you&#39;ve been feeling has anything to do with not being chosen. As you think about all the times you have tried to stay true to your morals but still hit walls, you decide then and there that this job isn’t worth all of the stress. While you have no idea what you’re going to do next, the act of making a plan makes you feel better.
 
-[[Next.|Disney World B]]</tw-passagedata>
+[[Next.|Disney World B]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Promotion C&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="70" name="Accept right away." tags="" position="1760,3984">You accept and shake hands with everyone in the room. Now the real work begins. 
 
-[[Next.|Disney World A]]</tw-passagedata>
-<tw-passagedata pid="71" name="Ask for a few days to think about it." tags="" position="2019,4073">You take the few days to talk with Jesse about all of your experiences at this job. Talking through the whole experience really helps you. You go back into the office and [[make your decision|Promotion A]]</tw-passagedata>
+[[Next.|Disney World A]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Accept right away.&#39;); &gt;&gt;</tw-passagedata>
+<tw-passagedata pid="71" name="Ask for a few days to think about it." tags="" position="2019,4073">You take the few days to talk with Jesse about all of your experiences at this job. Talking through the whole experience really helps you. You go back into the office and [[make your decision|Promotion A]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Ask for a few days to think about it.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="72" name="Decline." tags="" position="1635,3902">You decide to decline the position. A few days later you put in you put in your notice. The job is not worth the stress, insomnia, and anxiety.
 
-[[Next.|Disney World B]]</tw-passagedata>
+[[Next.|Disney World B]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Decline.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="73" name="Say nothing B" tags="" position="2417,2261">You grab food and hurry back to your cubicle still distraught. You&#39;ve been doing your best to talk to people when the microaggressions happen, but the stress of trying to fit into this workplace has exhausted you. The thought of saying something again seems too daunting. The rest of the day passes in a daze.
 
-[[Next.|Halloween Aftermath]]</tw-passagedata>
+[[Next.|Halloween Aftermath]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Say nothing B&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="74" name="Disney World A" tags="" position="1713,4263">Cheese! You and your friends smile as you get your picture taken with Minnie Mouse. It’s been a long time since you’ve all been able to get together and do something, and while it’s exhausting, you are feeling better than you have in a long time. You and your friends have dressed up as Disney’s Princesses and you are rocking what is an amazing Belle costume. You still aren’t fond of your job and the coworkers still make a lot of loaded comments, but you&#39;ve started to speak up about the instances that upset you. Now that you have more power at work, it doesn’t feel like so daunting a task. 
 
 As you and your friends walk into a candy store, a girl turns to her mom and says, //Why is that lady dressed as Belle? Belle isn’t Black!//
@@ -599,7 +829,9 @@ As you and your friends walk into a candy store, a girl turns to her mom and say
 &lt;strong&gt;End&lt;/strong&gt;
 
 
-[[Epilogue]] </tw-passagedata>
+[[Epilogue]] 
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Disney World A&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="75" name="Disney World B" tags="" position="1891,4321">Cheese! You and your friends smile as you get your picture taken with Minnie Mouse. It’s been a long time since you’ve all been able to get together and do something, and while it’s exhausting, you are feeling better than you have in a long time. You and your friends have dressed up as Disney’s Princesses and you are rocking what is an amazing Belle costume. You have found a new job and so far it seems to be going well. These coworkers make some loaded comments, but seem genuinely open to conversation when you speak up. It is still exhausting, but the support network, your friends and Jesse, bring make it manageable.  
 
 As you and your friends walk into a candy store, a girl turns to her mom and says, //Why is that lady dressed as Belle? Belle isn’t Black!//
@@ -609,46 +841,80 @@ As you and your friends walk into a candy store, a girl turns to her mom and say
 &lt;strong&gt;End&lt;/strong&gt;
 
 
-[[Epilogue]] </tw-passagedata>
+[[Epilogue]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Disney World B&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="76" name="Alex sc" tags="" position="565,321">Most of your circle are other gay and queer men. You found each other through various queer events in the city. Your hangouts tend to involve going out to various restaurants and bars which is how you like it. Rarely is there a night where at least one of the people in the circle aren’t going out. 
 
-[[Back.|Alex]]</tw-passagedata>
+[[Back.|Alex]]
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex sc&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="77" name="Tyler" tags="" position="950,315">You met Tyler at a rooftop party a couple of years ago. You had an immediate connection. After hooking up that night and for a couple of weeks after, you ended up dating. While it only lasted a couple of months you’ve been friends since then. Your shared love of brunch (and mimosas) make him the perfect brunch buddy. You both go every Sunday to share the latest work and friend drama.
 
-[[Back.|Alex]]</tw-passagedata>
+[[Back.|Alex]]
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Tyler&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="78" name="Alex Start" tags="" position="785,490">It is bright and early on a Monday morning in June. Today is your first day of work! It’s your first real job out of school and you are a bundle of nerves. As you look through your closet you come up with three different outfits. You decide to:
 
 [[Dress up- got to make a good impression!|Alex Dressy]]
 [[Wear something casual but appropriate- don’t want to look like you’re trying too hard.|Alex Casual]]
 [[Basics-Can never go wrong with the basics.|Alex Basics]]
-</tw-passagedata>
-<tw-passagedata pid="79" name="Alex Dressy" tags="" position="579,485">After spending 15 minutes putting pomade in your hair and making sure that your curl pattern is just right, you throw on a royal blue suit, adjust your rainbow flag tie bar, and [[Head to Work|Alex Head to Work]].</tw-passagedata>
-<tw-passagedata pid="80" name="Alex Casual" tags="" position="988,614">You throw on a button down and slacks. At the last minute you decide to put a blazer over it. You consider putting pomade in your hair; instead you put a dollop of mousse in your hands and quickly run it through your hair. After adjusting your rainbow flag tie bar you [[Head to Work|Alex Head to Work]].</tw-passagedata>
-<tw-passagedata pid="81" name="Alex Basics" tags="" position="993,489">You throw on a button down and dark wash jeans. After running your hands through your hair with mousse a couple a times you call it a day. You adjust your rainbow flag pin in the mirror and [[Head to Work|Alex Head to Work]].</tw-passagedata>
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Start&#39;); &gt;&gt;</tw-passagedata>
+<tw-passagedata pid="79" name="Alex Dressy" tags="" position="579,485">After spending 15 minutes putting pomade in your hair and making sure that your curl pattern is just right, you throw on a royal blue suit, adjust your rainbow flag tie bar, and [[Head to Work|Alex Head to Work]].
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Dressy&#39;); &gt;&gt;</tw-passagedata>
+<tw-passagedata pid="80" name="Alex Casual" tags="" position="988,614">You throw on a button down and slacks. At the last minute you decide to put a blazer over it. You consider putting pomade in your hair; instead you put a dollop of mousse in your hands and quickly run it through your hair. After adjusting your rainbow flag tie bar you [[Head to Work|Alex Head to Work]].
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Casual&#39;); &gt;&gt;</tw-passagedata>
+<tw-passagedata pid="81" name="Alex Basics" tags="" position="993,489">You throw on a button down and dark wash jeans. After running your hands through your hair with mousse a couple a times you call it a day. You adjust your rainbow flag pin in the mirror and [[Head to Work|Alex Head to Work]].
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Basics&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="82" name="Alex Head to Work" tags="" position="792,615">You take a deep breath and walk into the building. Your future supervisor quickly greets you and welcomes you to the company. She escorts you around the office introducing you to colleagues who are too many to count. Finally, you sit in your cubicle. The coworker in the cubicle next to you leans over and says: //So I have a cousin like you so I’m super progressive.//
 
 [[Thanks?]]
 [[What does that mean?]] 
 [[The gay community thanks you.]]
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Head to Work&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="83" name="Thanks?" tags="" position="792,765">//No problem! I consider myself an ally to the gays.//
 
 //...//
 &lt;&lt;set $happiness to $happiness - 1&gt;&gt;
-[[Next.|Alex Happy Hour]]</tw-passagedata>
+[[Next.|Alex Happy Hour]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Thanks?&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="84" name="What does that mean?" tags="" position="942,765">//you know…swishy//
 
 
 As you open your mouth to explain that not all gay people look and act the same they go back to their own cubicle. 
 &lt;&lt;set $happiness to $happiness - 3&gt;&gt;
 
-[[Next.|Alex Happy Hour]]</tw-passagedata>
+[[Next.|Alex Happy Hour]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;What does that mean?&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="85" name="The gay community thanks you." tags="" position="667,765">//Hah! You&#39;re so sassy I love it! You people are always so funny.//
 
 &quot;... thanks?&quot;
 
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
-[[Next.|Alex Happy Hour]]</tw-passagedata>
+[[Next.|Alex Happy Hour]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;They gay community thanks you.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="86" name="Alex Happy Hour" tags="" position="837,921">The rest of the day passes relatively quickly. You end up really liking your work (at least so far). At the end of the day there is talk of going out to happy hour. A bunch of the younger workers look to you and invite you to happy hour. What do you say?
 
 &lt;&lt;if $happiness gte 93&gt;&gt;[[Sure! Sounds like fun.]] 
@@ -661,10 +927,16 @@ As you open your mouth to explain that not all gay people look and act the same 
   &lt;span style=&quot;width:500px;&quot;&gt;This option is not available to you due to the energy you have expended dealing with prior microagressions&lt;/span&gt;&lt;/span&gt;[[Maybe for an hour.]] 
 [[Nah, I’m totally beat.|Alex says no]]
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata>
+&lt;&lt;/if&gt;&gt;
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Happy Hour&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="87" name="Maybe for an hour." tags="" position="1087,964">//Awesome! Here&#39;s the address. See you there!// 
 
-[[Next.|Alex Bar]] </tw-passagedata>
+[[Next.|Alex Bar]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Maybe for an hour.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="88" name="Alex Bar" tags="" position="864,1086">&lt;div class=&quot;bar&quot;&gt;
 &lt;img src= &quot;images/bar.jpg&quot; alt=&quot;liquor bottles on a wall&quot;/&gt;
 You go to a loud and boisterous bar. You smile excitedly. This is your element. You and your coworkers have a couple of drinks. As the drinking continues so does the energetic atmosphere and you think this is going to be good fit. Everyone is really friendly and welcoming. After a while, however, the joking begins. You start to feel uncomfortable as the jokes become less and less funny, and more and more homophobic. As you try and figure out the best exit strategy, a coworker drunkenly leans on you and says, 
@@ -675,13 +947,22 @@ You go to a loud and boisterous bar. You smile excitedly. This is your element. 
 [[Laugh uncomfortably and say thanks.|Alex laugh]] 
 [[Push her off and say yeah that’s not happening.|Alex pushes]]
 [[I know you probably meant well but that’s not ok.|Alex I know you meant well v1]]&lt;/div&gt;
-</tw-passagedata>
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Bar&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="89" name="Sure! Sounds like fun." tags="" position="714,1099">//Awesome! Here&#39;s the address. See you there!// 
 
-[[Next.|Alex Bar]] </tw-passagedata>
+[[Next.|Alex Bar]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Sure! Sounds like fun.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="90" name="Alex says no" tags="" position="589,1069">//Lame! Alright; see you tomorrow!// &lt;&lt;set $happiness to $happiness - 3&gt;&gt;
 
-[[Next.|Lovely Girl A]]</tw-passagedata>
+[[Next.|Lovely Girl A]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex says no&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="91" name="Alex Pool" tags="pool" position="789,1533">
 &lt;div class=&quot;pool&quot;&gt;
 &lt;img src= &quot;images/pool.JPG&quot; alt=&quot;outdoor pool&quot;/&gt;
@@ -693,40 +974,67 @@ To celebrate your birthday Tyler and your friends organize a pool party. You inv
 
 [[What do you mean?]] 
 [[Yeah I’ll tell them to butch up just for you.]] &lt;/div&gt;
-</tw-passagedata>
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Pool&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="92" name="Alex laugh" tags="" position="863,1263">The coworker kisses you on the cheek and stumbles away. The incident leaves a sour note in your mouth and you depart soon after. On your home, you call Tyler to talk to him about the Happy Hour. The conversation helps your frazzled nerves but feeling a little wary going into work the next day.
 &lt;&lt;set $happiness to $happiness - 3&gt;&gt;
-[[Next.|Lovely Girl B]]</tw-passagedata>
+[[Next.|Lovely Girl B]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex laugh&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="93" name="Alex pushes" tags="" position="1064,1232">//Jeez, calm down! It was just a joke!//
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
-[[Next.|Lovely Girl B]]</tw-passagedata>
+[[Next.|Lovely Girl B]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex pushes&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="94" name="Alex I know you meant well v1" tags="" position="721,1270">//My bad.//
 &lt;&lt;set $happiness to $happiness - 1&gt;&gt;
-[[Next.|Lovely Girl B]]</tw-passagedata>
+[[Next.|Lovely Girl B]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex I know you meant well v1&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="95" name="Lovely Girl A" tags="" position="596,1297">The next morning you throw on some clothes, and head to work. When you get there many of your coworkers are talking about how great the happy hour was. Throughout the day they make inside jokes and references to the night before you wonder if it would have been good for you to go. As you walk home, the streets hiss from the recent rainfall. You briefly consider using this serendipitous solitude to catch up on your guilty pleasure television show you’d neglected in the past couple of weeks. As you picture adorable British judges talking about soggy bottoms, you notice that this old woman keeps glancing back at you from further up in the street. On her fourth turn around, she stops, walks towards you, and says 
 
 //You know if you wore different clothes, I’m sure you’d find a lovely girl.// 
 
 And walks away.
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
-[[Next.|Alex Pool]]</tw-passagedata>
+[[Next.|Alex Pool]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Lovely Girl A&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="96" name="Lovely Girl B" tags="" position="932,1448">The next morning you’re feeling anxious from the night before. You decide to throw on some clothes, and head to work. When you get there you can feel the difference in how your colleagues treat you. They laugh and joke about the happy hour the night before and seem genuinely happy that you came out with them. You can tell that they feel that you are now part of them. You’re happy they like you, but it’s hard to shake off the discomfort from the events last night. But, the day passes without any incidents. As you walk home, the streets hiss from the recent rainfall. You briefly consider using this serendipitous solitude to catch up on your guilty pleasure television show you’d neglected in the past couple of weeks. As you picture adorable British judges talking about soggy bottoms, you notice that this old woman keeps glancing back at you from further up in the street. On her fourth turn around, she stops, walks towards you, and says “You know if you wore different clothes, I’m sure you’d find a lovely girl.” And walks away.
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
-[[Next.|Alex Pool]]</tw-passagedata>
+[[Next.|Alex Pool]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Lovely Girl B&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="97" name="What do you mean?" tags="" position="754,1683">//You know...they&#39;re just acting...kind of gay...//
 
 You explain that a lot of your friends are, in fact, gay, but that stereotyping isn&#39;t cool. Sam laughs uncomfortably and leaves shortly after. The party continues, but you can’t help but feel a little disappointed in his behavior and it affects your mood for the rest of the night. 
 &lt;&lt;set $happiness to $happiness - 3&gt;&gt;
-[[Next.|Alex Humpday]]</tw-passagedata>
+[[Next.|Alex Humpday]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;What do you mean?&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="98" name="Yeah I’ll tell them to butch up just for you." tags="" position="980,1701">Sam laughs uncomfortably and leaves shortly after. The party continues, but you can’t help but feel a little disappointed in his behavior and it affects your mood for the rest of the night. 
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
-[[Next.|Alex Humpday]]</tw-passagedata>
+[[Next.|Alex Humpday]]
+
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Yeah I&#39;ll tell them to butch up just for you.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="99" name="Alex Humpday" tags="" position="779,1829">Humpday is hitting you hard. There are too many days until the weekend and there is a lot of work to be done before you can leave. You put your headphones on, crank up the music, and try and tune everyone out. It takes a couple of tries before a colleague gets your attention, and you take off your headphones and:
 
 [[Ask what’s up.|Homophobic Question]] 
 [[Say I’m busy can I talk later.|Alex is sassy]]
 [[Listen while still working.|Homophobic Question]]
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Humpday&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="100" name="Homophobic Question" tags="" position="755,1982">//Just wanted to ask if any supervisors have ever had a problem with you being gay? 
 
 ….
@@ -735,12 +1043,17 @@ No? Wow it’s lucky we work in such an understanding place, right? And that it�
 
 They then walk away. It takes a while before you get back into the groove of working, and hours later you realize that you’ve been subconsciously “butching up” or acting more stereotypically masculine all day. 
 &lt;&lt;set $happiness to $happiness - 8&gt;&gt;
-[[Next.|Alex Sports]]</tw-passagedata>
+[[Next.|Alex Sports]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Homophobic Question&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="101" name="Alex is sassy" tags="" position="983,1888">//Wow so sassy! I kind of love it. 
 
 But sure I&#39;ll be back later!//
 &lt;&lt;set $happiness to $happiness - 3&gt;&gt;
-[[Next.|Alex Sports]]</tw-passagedata>
+[[Next.|Alex Sports]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex is sassy&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="102" name="Alex Sports" tags="" position="915,2060">It’s a lazy Saturday morning. You get a call from a coworker. You&#39;ve hung out with this colleague a few times during a few work happy hours, and you get along well enough but aren&#39;t particularly close. Slightly confused you answer the phone. He tells you that there&#39;s going to be a football game at the nearby stadium and that he had an extra ticket. You don&#39;t have work in the morning, and have nothing else in particular to do that day. As you open your mouth to acquiesce the colleague says
 
 //I know you people don’t like do sports, but I figured I’d ask.// 
@@ -753,18 +1066,27 @@ But sure I&#39;ll be back later!//
 [[My people?]]
 [[…right.]]
 ==Yeah my people only go shopping and decorate.==
-&lt;&lt;/if&gt;&gt;</tw-passagedata>
+&lt;&lt;/if&gt;&gt;
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Sports&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="103" name="…right." tags="" position="914,2209">You meet your coworker at the stadium and end up really enjoying yourself, but the comment irritates you all day. You can’t help but wonder if speaking up would have been the better move. Later as you’re getting ready to sleep, you get a text from the coworker that says
 
 //Thanks for the save; you’re not what I expected at all.//
 
-[[Next.|Alex Break Room]]</tw-passagedata>
+[[Next.|Alex Break Room]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;...right&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="104" name="My people?" tags="" position="789,2209">//You know...your people...//
 
 You roll your eyes and:
 
 [[Go.|…right.]]
-[[Decline.|Alex no go]]</tw-passagedata>
+[[Decline.|Alex no go]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;My people?&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="105" name="Alex Break Room" tags="" position="914,2359">It’s a Thursday afternoon. You arrive at the break room early to heat up your food. As you sit in the waiting area for your food, two colleagues come into the room talking and laughing. You get up to join the conversation when you hear:
 
 //Gay guys make me uncomfortable. Well two guys, girl-on-girl is kind of hot. Guy-on-guy is just gross.//
@@ -772,30 +1094,45 @@ You roll your eyes and:
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
 [[Say nothing and pretend you didn’t hear.|Alex says nothing]]
 [[Join the conversation to explain why that comment is homophobic.]]
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Break Room&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="106" name="Yeah my people only go shopping and decorate." tags="" position="1090,2112">Your coworker irritatedly asks you if you want to go to the game or not. 
 
 [[Go.|…right.]]
 [[Decline.|Alex no go]]
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Yeah my people only go shopping and decorate.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="107" name="Alex no go" tags="" position="1090,2262">//Ugh I should have known!// 
 
 Later, you get invited to a house party, and end up really enjoying yourself, but the comment irritates you all day and puts a damper on what would have been a great night.
 
-[[Next.|Alex Break Room]]</tw-passagedata>
+[[Next.|Alex Break Room]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex no go&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="108" name="Alex says nothing" tags="" position="914,2509">Laughing they grab their food from the fridge and leave. You get your own food and go back to your desk, but find it hard to focus and the comment stays with you all day.
 &lt;&lt;set $happiness to $happiness - 4&gt;&gt;
-[[Next.|Alex Halloween 1]]</tw-passagedata>
+[[Next.|Alex Halloween 1]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex says nothing&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="109" name="Join the conversation to explain why that comment is homophobic." tags="" position="1064,2509">You interrupt the conversation to say that is not an offensive thing to say. The back and forth continues on for a while. 
 
 //I mean yeah you’re totally cool and all, but it’s still gross. Like that is just not how sex works...it’s unnatural...can’t help what I feel…//
 
 Realizing that the conversation is going nowhere you “agree to disagree” and the colleagues leave the room with their food. You head to the bathroom, splashing water on your face feeling angry and alone.
 &lt;&lt;set $happiness to $happiness - 8&gt;&gt;
-[[Next.|Alex Halloween 1]]</tw-passagedata>
+[[Next.|Alex Halloween 1]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Join the conversation to explain why that comment is homophobic.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="110" name="Alex Halloween 1" tags="" position="914,2659">Tyler calls you one Tuesday in October and asks you to help him decorate his apartment for Halloween. You head over and see spiders, cobwebs, skeletons, and candy in a pile on the table.  You smile and start to help. By the end of the evening, you’re tired but content. You head back to your apartment, belly full of candy and start getting ready for bed. The sugar crash hits, but thinking about going to work tomorrow starts to fill you with anxiety. You love the work that you’re doing, and your coworkers are all fun people, but it seems like everyone either ignores your sexuality or assumes that you are this one dimensional stereotype. You lay in bed, each minute ticking closer and closer to &quot;wake up time&quot; and passing on a swelling wave of ever-encroaching dread. Recurrent intrusive thoughts about things people have said at work, and what might happen in the future keep you up. Finally, you pass into a fitful sleep.
 &lt;&lt;set $happiness to $happiness - 3&gt;&gt;
-[[Next.|Alex Halloween 2]]</tw-passagedata>
+[[Next.|Alex Halloween 2]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Halloween 1&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="111" name="Alex Halloween 2" tags="" position="915,2809">Halloween falls on a Friday this year. Your friends have already organized a huge multi-house bash. Last time Halloween fell on a Friday the parties lasted all weekend. Because of this, you’re more excited for the work day to be over so the fun can begin. As you leave for work you check yourself in the mirror one last time. Hat...brown leather jacket...khakis...bullwhip...alright all set. You head into work. Most of your colleagues have dressed up in some capacity. You breathe a little sigh of relief when you don’t see any terrible costumes. A couple of hours pass, and you head to the Halloween work luncheon. You head over to Sam to say hi. He’s been friendly, but distant since the pool party. He’s dressed like a police officer. He glances at your costume and says, 
 
 //It’s ironic that your costume is Indiana Jones.//
@@ -808,7 +1145,10 @@ Realizing that the conversation is going nowhere you “agree to disagree” and
 [[Is it? Why?]]
 [[Would you rather I have been dressed as a fairy?]]
 [[Well screw you too.]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata>
+&lt;&lt;/if&gt;&gt;
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Halloween 2&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="112" name="Is it? Why?" tags="" position="915,2959">//Oh you know….cause he was such a ladies man, and you’re….you know…//
 
 ==Force yourself to say something.==
@@ -816,43 +1156,64 @@ Realizing that the conversation is going nowhere you “agree to disagree” and
 ==Talk to HR. But that’s so official...==
 ==Just open your mouth and let it happen. Why can’t you say anything?==
 [[Say nothing. You haven’t been saying anything for months why start now?]]
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Is it? Why?&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="113" name="Would you rather I have been dressed as a fairy?" tags="" position="1065,2959">//Wow there’s no need to be so rude. I’m not homophobic, I’m just saying that his character is known for being a ladies man, and you’re obviously not.//
 
 [[Talk to at least your supervisor. It shouldn&#39;t be that hard.]]
 [[Talk to HR. But that’s so official...]]
 [[Just open your mouth and let it happen. Why can’t you say anything?]]
-[[Say nothing. You haven’t been saying anything for months why start now?]]</tw-passagedata>
+[[Say nothing. You haven’t been saying anything for months why start now?]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Would you rather I have been dressed as a fairy?&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="114" name="Well screw you too." tags="" position="1215,2959">//Wow there’s no need to be so rude. I’m not homophobic, I’m just saying that his character is known for being a ladies man, and you’re obviously not.//
 
 ==Force yourself to say something.==
 ==Talk to HR. But that’s so official...==
 [[Just open your mouth and let it happen. Why can’t you say anything?]]
 [[Talk to at least your supervisor. It shouldn&#39;t be that hard.]]
-[[Say nothing.|Say nothing. You haven’t been saying anything for months why start now?]]</tw-passagedata>
+[[Say nothing.|Say nothing. You haven’t been saying anything for months why start now?]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Well screw you too.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="115" name="Say nothing. You haven’t been saying anything for months why start now?" tags="" position="915,3109">You grab food and hurry back to your cubicle still distraught. You&#39;ve been doing your best to talk to people when the microaggressions happen, but the stress of trying to fit into this workplace has exhausted you. The thought of saying something again seems too daunting. The rest of the day passes in a daze.
 
-[[Next.|Alex Halloween Aftermath]]</tw-passagedata>
+[[Next.|Alex Halloween Aftermath]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Say nothing. You haven’t been saying anything for months why start now?&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="116" name="Talk to at least your supervisor. It shouldn&#39;t be that hard." tags="" position="1065,3109">You find your supervisor by the food and try to explain why you feel uncomfortable, but your supervisor just laughs it off and tells you to stop being so sensitive. You grab food and hurry back to your cubicle. The rest of the day passes in a daze.
 
-[[Next.|Alex Halloween Aftermath]]</tw-passagedata>
+[[Next.|Alex Halloween Aftermath]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Talk to at least your supervisor. It shouldn&#39;t be that hard.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="117" name="Talk to HR. But that’s so official..." tags="" position="1215,3109">You find your HR representative, and ask to speak to them about the incident. You go into their office and begin to explain how it hurt you. Suddenly, you&#39;re unloading some of the microaggressions you have been experiencing throughout the job. They hear you out, and state next steps. You leave feeling drained, but relieved.
 &lt;&lt;set $hasHR to true&gt;&gt;
 &lt;&lt;set $happiness to $happiness + 5&gt;&gt;
-[[Next.|Alex Halloween Aftermath]]</tw-passagedata>
+[[Next.|Alex Halloween Aftermath]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Talk to HR. But that’s so official...&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="118" name="Just open your mouth and let it happen. Why can’t you say anything?" tags="" position="1366,3108">You desperately want to say something. You look down and notice that your hands are shaking. All of the previous incidents at work come rushing back. You haven&#39;t really tried to speak up before. Can you really start now? You grab food and hurry back to your cubicle still distraught. The rest of the day passes in a daze.
 &lt;&lt;set $happiness to $happiness - 5&gt;&gt;
-[[Next.|Alex Halloween Aftermath]]</tw-passagedata>
+[[Next.|Alex Halloween Aftermath]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Just open your mouth and let it happen. Why can’t you say anything?&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="119" name="Alex Halloween Aftermath" tags="" position="988,3247">The alarm rings for work. You groan and hurriedly turn it off. The thought of going to work seems impossible. Not only are you exhausted from partying all weekend, but you know you’re still angry at Sam for saying what he said; You’re also angry at yourself for not saying anything. You-
 
 ==Force yourself to go to work.== 
 ==Decide to go in late.==
 [[Call in sick. It’s just not happening.|Alex calls in sick]]
 
-</tw-passagedata>
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Halloween Aftermath&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="120" name="Alex calls in sick" tags="" position="988,3397">You send a quick email to your boss. As you throw the covers over your head you realize just how relieved you are. Work has really been wearing you down lately. 
 
-[[Next.|Alex Christmas]]</tw-passagedata>
+[[Next.|Alex Christmas]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex calls in sick&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="121" name="Alex Christmas" tags="" position="1173,3405">As you walk into work, your heart sinks as you realize that the office has been decorated to the nines for Christmas. You walk to your desk and hunker down for some work. Noticing that you’re not that enthused a coworker calls you a Grinch. You roll your eyes and continue working. Part of the reason you chose the job was because it was a secular institution. There’s no need for religious holidays in the workplace. Then another colleague says,
 
 //Don’t tease him! He’s probably a Grinch cause his family rejected him!//
@@ -860,26 +1221,40 @@ Realizing that the conversation is going nowhere you “agree to disagree” and
 [[Gasp and gape at her.]] 
 [[Cringe and state that actually your family is really close.]]
 [[Explain that not all gay people have troubled family relationships.]]
-</tw-passagedata>
-<tw-passagedata pid="122" name="Tyler Brunch Date A" tags="" position="1415,3680">You and Tyler are having your usual brunch date. After a while the conversation turns to work. Tyler excitedly talks about all the amazing things that has been happening at work. As you watch his face light up as he talk about it, you can’t help but feel resentful that your own workplace isn’t as supportive. As you listen, you resolve to try and make things better at your own workplace. While you have no idea how you’re going to do that, the act of making a plan makes you feel better. 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Christmas&#39;); &gt;&gt;</tw-passagedata>
+<tw-passagedata pid="122" name="Tyler Brunch Date A" tags="" position="1416,3680">You and Tyler are having your usual brunch date. After a while the conversation turns to work. Tyler excitedly talks about all the amazing things that has been happening at work. As you watch his face light up as he talk about it, you can’t help but feel resentful that your own workplace isn’t as supportive. As you listen, you resolve to try and make things better at your own workplace. While you have no idea how you’re going to do that, the act of making a plan makes you feel better. 
 &lt;&lt;set $happiness to $happiness + 10&gt;&gt;
-[[Next.|Alex plays hooky]]</tw-passagedata>
+[[Next.|Alex plays hooky]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Tyler Brunch Date A&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="123" name="Cringe and state that actually your family is really close." tags="" position="1323,3555">You reply, “Actually my family is really accepting, and I’m very close with them.”
 
 //Oh! Well that’s great that they’re so liberal!//
 
-[[Next.|Tyler Brunch Date A]]</tw-passagedata>
+[[Next.|Tyler Brunch Date A]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Cringe and state that actually your family is really close.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="124" name="Explain that not all gay people have troubled family relationships." tags="" position="1473,3555">//No I totally get that. I mean I have a gay cousin and no one treats her any differently. It’s like she’s not even gay.//
 
 
-[[Next.|Tyler Brunch Date A]]</tw-passagedata>
+[[Next.|Tyler Brunch Date A]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Explain that not all gay people have troubled family relationships.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="125" name="Tyler Brunch Date B" tags="" position="1126,3702">You and Tyler are having your usual brunch date. After a while the conversation turns to work. Tyler excitedly talks about all the amazing things that has been happening at work. As you watch his face light up as they talk about it, you can’t help but feel resentful that your own workplace isn’t as supportive. As you listen, despair at having to go back into the job day after day. Later that night, you find it impossible to fall asleep. Every time you close your eyes, you&#39;re overcome with anxious thoughts that wrap themselves around each other. Worries about your job lead overwhelm you and you&#39;re unable to shake them off long enough to doze off. Your eyes won&#39;t even stay shut as your mind races through the various things that have happened at work.
 
 ==Force yourself to sleep.== 
 ==Do some relaxing breathing exercises to help you fall asleep.==
 ==Walk around to shake off some of the anxiety jitters.==
 [[Turn on the tv. It is just not happening any time soon.|Alex tv]] 
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Tyler Brunch Date B&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="126" name="Alex plays hooky" tags="park" position="1415,3831">&lt;div class=&quot;park&quot;&gt;
 &lt;img src= &quot;images/park.jpg&quot; alt=&quot;park bench with a fountain in the background&quot;/&gt;
 It’s a beautiful April day and you have decided to take a personal day. You put on a pair of sweats and a tank and head to the gym. Afterward, you get a milkshake and sit in the park enjoying the weather. With your eyes closed and face up to the sky you think that the life can’t get any better than this moment. 
@@ -893,32 +1268,54 @@ You hear your name being called out and open your eyes and there is a colleague 
 ==Let it slide.==
 [[What do you mean?|Alex what do you mean]]
 [[I know you probably meant well, but that’s not ok.|Alex says not ok]] &lt;/div&gt;
-</tw-passagedata>
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex plays hooky&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="127" name="Gasp and gape at her." tags="" position="1173,3555">Too shocked to actually say anything the conversation moves on to other things and the moment passes. You intensely regret not saying anything but are unsure of whether it is appropriate to bring it up once conversation has shifted and how you would do so. 
-[[Next.|Tyler Brunch Date B]]</tw-passagedata>
+[[Next.|Tyler Brunch Date B]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Gasp and gape at her.&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="128" name="Alex tv" tags="" position="1126,3852">Nothing else seems to be working so you turn on the tv. Flipping through channels, you finally settle on some nature documentary. After what feels like lifetimes you finally fall asleep.
 
-[[Next.|Alex plays hooky]]</tw-passagedata>
+[[Next.|Alex plays hooky]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex tv&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="129" name="Alex what do you mean" tags="" position="1294,4010">//I like gay guys who aren’t, like, too gay, you know what I mean? Like you work out and go to football games and stuff. So it’s like you’re not even gay.//
 
 ==Let it slide.==
 [[Joke about how there’s no gay card.]]
 [[I know you probably meant well, but that’s not ok.|Alex says not ok]] 
 
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex what do you mean&#39;); &gt;&gt;
+
 </tw-passagedata>
 <tw-passagedata pid="130" name="Alex says not ok" tags="" position="1472,4022">//Sorry I didn’t intend to hurt your feelings or whatever. I was just saying that to me it’s like you’re not even gay.//
 
-[[That doesn&#39;t make it ok though...]]</tw-passagedata>
+[[That doesn&#39;t make it ok though...]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex says not ok&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="131" name="Joke about how there’s no gay card." tags="" position="1294,4160">As you joke about how there isn’t an actual gay card but thanks, you feel good about saying something. Even if it might not be taken seriously, you stood up for yourself. But you still feel sad that you couldn’t be more explicit about it. The rest of the conversation passes without incident and you head home.
 
-[[Next.|Fencing]]</tw-passagedata>
+[[Next.|Fencing]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Joke about how there’s no gay card.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="132" name="That doesn&#39;t make it ok though..." tags="" position="1472,4172">As you try and explain the reasons that is offensive, they shrug. 
 
 //Jeez. I don’t know why you’re being so sensitive about this. It was a compliment!// 
 
 Frustrated, you change the subject, and head home soon after.
 
-[[Next.|Fencing]]</tw-passagedata>
+[[Next.|Fencing]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;That doesn&#39;t make it ok though...&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="133" name="Fencing" tags="" position="1294,4310">11:00pm….
 
 1:30am….
@@ -934,13 +1331,25 @@ At this point the clock seems to be taunting you. It has been a while since you�
 [[Say something sarcastic.|Alex snark]]
 [[Call him out in private.]] 
 
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Fencing&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="134" name="Call him out in front of everyone." tags="" position="1294,4460">Unamused, you try to explain how offensive that comment is, but the group just laughs it off and tells you to stop being so sensitive.
 
-[[Next.|Alex Promotion B]]</tw-passagedata>
+[[Next.|Alex Promotion B]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Call him out in front of everyone.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="135" name="Call him out in private." tags="" position="1444,4460">Later you attempt to explain to him why the comment was offensive, but he just laughs it off and tells you to stop being so sensitive.
 
-[[Next.|Alex Promotion A]]</tw-passagedata>
+[[Next.|Alex Promotion A]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Call him out in private.&#39;); &gt;&gt;
+
+</tw-passagedata>
 <tw-passagedata pid="136" name="Alex snark" tags="" position="993,4437">&quot;Ahh yes fighting with swords...the most feminine of activities.&quot;
 
 The group laughs and the guy who made the comment looks embarrassed and annoyed.
@@ -948,26 +1357,42 @@ The group laughs and the guy who made the comment looks embarrassed and annoyed.
 &lt;&lt;if $hasHR is true&gt;&gt;[[Next.|Alex Promotion B]] 
 &lt;&lt;elseif $hasHR is false&gt;&gt;[[Next.|Alex Promotion C]] 
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex snark&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="137" name="Alex Promotion A" tags="" position="1444,4610">It’s a hot day in May. Summer is definitely here  you think as you walk into work and put your stuff down. As you get started on the work for the day, your supervisor comes up to you and asks to see you in her office. Heart sinking you follow her into her office and see some other people from administration there. As you sit down you wrack your brain thinking about what you could have possibly done badly to warrant this. They talk about your time here and how well you’ve fit the culture. The words “surprisingly well” stick in your head as they talk about your well your accomplishments fit their institution’s values. They decide to offer you a promotion! As they tell you about what the new job will entail and what the benefits will be, you are flooded with mixed emotions. The job will give you more power to start making some very needed changes to the workplace culture, but the thought of staying for another year to begin those changes seem daunting. Is this job worth it? The stress? Sleeplessness? Anxiety? You think on all the things that have happened in this past year and:
 
 [[Accept right away.|Alex accepts]]
 [[Ask for a few days to think about it.|Alex thinks]]
 [[Decline.|Alex declines]]
-</tw-passagedata>
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Promotion A&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="138" name="Alex Promotion B" tags="" position="1169,4610">It’s a hot day in May. Summer is definitely here  you think as you walk into work and put your stuff down. You&#39;re excited but nervous because there is talk about a promotion and you and your colleague have both been gunning for it. And according to the rumor mill, it will be awarded today. Hours pass and you don’t hear anything. Finally, you hear a bunch of colleagues planning a congratulatory happy hour for the promotion. It takes everything in you not to leave the room. You have worked really hard for the promotion. And you wonder if the fact that your supervisor has some people at work have called you confrontational has anything to do with not being chosen. As you think about all the times you have tried to stay true to your morals and hit walls you decide then and there that the job isn’t worth all of the stress. While you have no idea how you’re going to do next, the act of making a plan makes you feel better. 
 
-[[Next.|Alex Disney B]]</tw-passagedata>
+[[Next.|Alex Disney B]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Promotion B&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="139" name="Alex accepts" tags="" position="1444,4760">You accept and shake hands with everyone in the room. Now the real work begins.
 
-[[Next.|Alex Disney A]]</tw-passagedata>
-<tw-passagedata pid="140" name="Alex thinks" tags="" position="1594,4760">You take the few days to talk with Tyler and your friends about all of your experiences at this job. Talking through the whole experience really helps you. You go back into the office and [[make your decision|Alex Promotion A]]</tw-passagedata>
+[[Next.|Alex Disney A]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex accepts&#39;); &gt;&gt;</tw-passagedata>
+<tw-passagedata pid="140" name="Alex thinks" tags="" position="1594,4760">You take the few days to talk with Tyler and your friends about all of your experiences at this job. Talking through the whole experience really helps you. You go back into the office and [[make your decision|Alex Promotion A]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex thinks&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="141" name="Alex declines" tags="" position="1744,4760">You decide to decline the position. A few days later you put in your notice. The job is not worth the stress, insomnia, and anxiety.
 
-[[Next.|Alex Disney B]]</tw-passagedata>
+[[Next.|Alex Disney B]]
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex declines&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="142" name="Alex Promotion C" tags="" position="971,4623">It’s a hot day in May. //Summer is definitely here,// you think as you walk into work and put your stuff down. You&#39;re excited but nervous because there is talk about a promotion and you and your colleague have both been gunning for it. And according to the rumor mill, it will be awarded today. Hours pass and you don’t hear anything. Finally, you hear a bunch of colleagues planning a congratulatory happy hour for the promotion. It takes everything in you not to leave the room. You have worked really hard for the promotion. And you wonder if the fact that going to HR about all of the microaggressions and stress you&#39;ve been feeling has anything to do with not being chosen. As you think about all the times you have tried to stay true to your morals and hit walls you decide then and there that the job isn’t worth all of the stress. While you have no idea how you’re going to do next, the act of making a plan makes you feel better.
 
-[[Next.|Alex Disney B]]</tw-passagedata>
+[[Next.|Alex Disney B]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Promotion C&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="143" name="Alex Disney A" tags="" position="1444,4910">Cheese! You and your friends smile as you get your picture taken with Minnie Mouse. It’s been a long time since you’ve all been able to get together and do something, and while it’s exhausting, you are feeling better than you have in a long time. You and your friend have dressed up as Disney’s Princesses and you are rocking what is an amazing Belle costume. You still aren’t fond of your job and the coworkers still make a lot of loaded comments, but you&#39;ve started to speak up about the instances that upset you. Now that you have more power at work, it doesn’t feel like so daunting a task. As you and your friends walk into a candy store, a girl turns to her mom and says,
 
 //Why are those guys dressed like princesses? Guys can only be princes!//
@@ -977,7 +1402,10 @@ The group laughs and the guy who made the comment looks embarrassed and annoyed.
 &lt;strong&gt;End&lt;/strong&gt;
 
 
-[[Epilogue]] </tw-passagedata>
+[[Epilogue]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Disney A&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="144" name="Alex Disney B" tags="" position="1148,4862">Cheese! You and your friends smile as you get your picture taken with Minnie Mouse. It’s been a long time since you’ve all been able to get together and do something, and while it’s exhausting, you are feeling better than you have in a long time. You and your friends have dressed up as Disney’s Princesses and you are rocking what is an amazing Belle costume. You have found a new job and so far it seems to be going well. These coworkers make some loaded comments, but seem genuinely open to conversation when you speak up. It is still exhausting, but the support network, your friends and Tyler, make it manageable. As you and your friends walk into a candy store, a girl turns to her mom and says, 
 
 //Why are those guys dressed like princesses? Guys can only be princes!//
@@ -988,16 +1416,24 @@ The group laughs and the guy who made the comment looks embarrassed and annoyed.
 
 
 [[Epilogue]] 
-</tw-passagedata>
-<tw-passagedata pid="145" name="How to Play" tags="" position="561,130">This game uses the &quot;Choose your own adventure&quot; format. These stories are not linear, instead your character&#39;s choices guide the direction of the story. All of the choices you make will impact your physical and mental state, as they would in real life. These choices consequently impact the decisions you are able to make in the future. Choices that you are unable to make due to physical and mental fatigue are demonstrated with a ==strikethrough.==
 
-[[Begin.]] </tw-passagedata>
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Alex Disney B&#39;); &gt;&gt;</tw-passagedata>
+<tw-passagedata pid="145" name="How to Play" tags="" position="562,130">This game uses the &quot;Choose your own adventure&quot; format. These stories are not linear, instead your character&#39;s choices guide the direction of the story. All of the choices you make will impact your physical and mental state, as they would in real life. These choices consequently impact the decisions you are able to make in the future. Choices that you are unable to make due to physical and mental fatigue are demonstrated with a ==strikethrough.==
+
+[[Begin.]] 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;how to play&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="146" name="StoryAuthor" tags="" position="199,290">by Fobazi M. Ettarh</tw-passagedata>
 <tw-passagedata pid="147" name="Epilogue" tags="" position="1912,5134">Thank you for taking the time out of your day to play //Killing Me Softly.// The game doesn&#39;t really engender a happy feeling in people, and I recognize that.
 
 For those who may be wondering about the lack of a happy ending, microaggressions do not end in real life, and therefore they do not end in //Killing Me Softly.// There are steps you can take to minimize the harm to yourself, such as surrounding yourself with good people, practicing self-care routines, and if possible moving or changing your situation, but unfortunately there is no end. 
 
-If you would like to learn more about microaggressions, acculturative stress, and its effects on the physical and mental state click [[here.|Bibliography]]</tw-passagedata>
+If you would like to learn more about microaggressions, acculturative stress, and its effects on the physical and mental state click [[here.|Bibliography]]
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Epilogue&#39;); &gt;&gt;</tw-passagedata>
 <tw-passagedata pid="148" name="Bibliography" tags="" position="2079,5161">&lt;strong&gt;Popular Sources&lt;/strong&gt;
 
 &lt;a href=&quot;http://www.butyoudontlooksick.com/articles/written-by-christine/the-spoon-theory/&quot;&gt;The Spoon Theory-Christine Miserandino&lt;/a&gt;
@@ -1038,6 +1474,18 @@ Sue, Derald Wing. (2010). //Microaggressions in Everyday Life.// Wiley.
 Sweet, E.L. (2015). Visceral Geographies of Whiteness and Invisible Microaggressions.//ACME:An International E-Journal for Critical Geographies. 14//(1), 298-323
 
 J. M., &amp; J. L. (2015). //Diversity and the Ivory Ceiling//. Inside Higher Ed. 
+
+
+&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, &#39;Bibliography&#39;); &gt;&gt;</tw-passagedata>
+<tw-passagedata pid="149" name="Google Analytics" tags="script" position="436,227.5">
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;https://www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-81886948-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
 </tw-passagedata>
 </tw-storydata>
 </div>
